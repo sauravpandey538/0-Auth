@@ -7,7 +7,9 @@ export async function middleware(request: NextRequest) {
 
   console.log("Running");
 
-  const session = request.cookies.get("next-auth.session-token")?.value || "";
+  const session =
+    request.cookies.get("next-auth.session-token")?.value ||
+    request.cookies.get("__Secure-next-auth.session-token");
   console.log("Session:", session);
 
   // unauthorized user

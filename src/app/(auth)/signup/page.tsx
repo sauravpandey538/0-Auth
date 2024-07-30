@@ -76,7 +76,7 @@ function Signup() {
         setIsSubmitting(true)
         try {
             const response = await axios.post('/api/signup', data);
-            //console.log(response)
+            console.log(response)
             toast({
                 title: 'Verify Your Account',
                 description: response.data.message
