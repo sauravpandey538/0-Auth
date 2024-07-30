@@ -36,9 +36,8 @@ export default function VerificationEmail({ username, otp, type }: VerificationE
                 />
             </Head>
             {type === 'verification' && <Preview>Here&apos;s your verification code: {otp}</Preview>}
-            {type === 'forget password' && <Preview>click <span><a
-                href='#'
-            >Here</a></span> to change your old passowrd or copy and paste the link below in your browser. </Preview>}
+
+
             {type === 'verification' && <Section>
                 <Row>
                     <Heading as="h2">Hello {username},</Heading>
