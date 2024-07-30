@@ -11,7 +11,12 @@ export async function middleware(request: NextRequest) {
   console.log("Session:", session);
 
   // unauthorized user
-  if (pathname && pathname !== "/signin" && !session) {
+  if (
+    pathname &&
+    pathname !== "/signin" &&
+    pathname !== "/signup" &&
+    !session
+  ) {
     return NextResponse.redirect(new URL("/signin", request.url));
   }
 
@@ -29,5 +34,5 @@ export async function middleware(request: NextRequest) {
   return NextResponse.next();
 }
 export const config = {
-  matcher: ["/verify/:path*", "/signup", "/signin", "/authorizedPage"],
+  matcher: ["/verify/:path*", "/signup", "/signin", "/authorizedPage", "/"],
 };
