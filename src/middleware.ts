@@ -26,6 +26,7 @@ export async function middleware(request: NextRequest) {
   if (
     (pathname === "/signin" ||
       pathname === "/signup" ||
+      pathname === "/" ||
       pathname.startsWith("/verify")) &&
     session
   ) {

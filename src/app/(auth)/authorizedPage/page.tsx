@@ -54,7 +54,7 @@ const AuthorizedPage: React.FC<ComponentNameProps> = ({ }) => {
                         </Button>
                         <Button
                             className='my-10'
-                            onClick={() => revokeGoogleToken(session.accessToken || '')}>Delete Account</Button>
+                            onClick={() => revokeGoogleToken(session.accessToken || '')}>Delete 0-auth Account</Button>
 
                     </>
                 ) : (
