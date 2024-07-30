@@ -9,7 +9,7 @@ interface ComponentNameProps {
 
 }
 
-const ComponentName: React.FC<ComponentNameProps> = ({ }) => {
+const AuthorizedPage: React.FC<ComponentNameProps> = ({ }) => {
     const { data: session, status } = useSession();
     //console.log(session)
 
@@ -70,4 +70,4 @@ const ComponentName: React.FC<ComponentNameProps> = ({ }) => {
     );
 };
 
-export default ComponentName;
+export default AuthorizedPage;
