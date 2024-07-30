@@ -25,7 +25,7 @@ import {
 import { signInSchema } from "@/schemas/signInSchema"
 import { signIn } from "next-auth/react"
 
-function page() {
+function UpdatePassword() {
 
     const [email, setEmail] = useState('');
     const [emailMessage, setEmailMessage] = useState('');
@@ -186,4 +186,4 @@ function page() {
     )
 }
 
-export default page
+export default UpdatePassword

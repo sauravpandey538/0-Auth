@@ -20,7 +20,7 @@ import {
     FormMessage,
 } from "@/components/ui/form"
 import { verifySchema } from "@/schemas/verifySchema"
-function page() {
+function VerifyUsername() {
 
     const [isSubmitting, setIsSubmitting] = useState(false)
     const { toast } = useToast()
@@ -98,4 +98,4 @@ function page() {
     )
 }
 
-export default page
+export default VerifyUsername

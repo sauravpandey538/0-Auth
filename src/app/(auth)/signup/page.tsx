@@ -27,7 +27,7 @@ import {
     FormMessage,
 } from "@/components/ui/form"
 import { BadgeInfo, CheckCheck, TicketPlus } from "lucide-react"
-function page() {
+function Signup() {
     const [username, setUsername] = useState('');
     const [usernameMessage, setUsernameMessage] = useState('');
     const [usernameMessageLoader, setUsernameMessageLoader] = useState(false);
@@ -183,4 +183,4 @@ function page() {
     )
 }
 
-export default page
+export default Signup
